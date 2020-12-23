@@ -35,41 +35,43 @@ public class RPN {
     }
 
     private float subtract() {
-        float rightOperand = stack.pop();
-        float leftOperand = stack.pop();
+        float rOperand = stack.pop();
+        float lOperand = stack.pop();
 
-        return stack.push(leftOperand + rightOperand);
+        return stack.push(lOperand - rOperand);
     }
 
     private float add() {
-        float rightOperand = stack.pop();
-        float leftOperand = stack.pop();
+        float rOperand = stack.pop();
+        float lOperand = stack.pop();
 
-        return stack.push(leftOperand + rightOperand);
+        return stack.push(lOperand + rOperand);
     }
 
     private float divide() {
-        float rightOperand = stack.pop();
-        float leftOperand = stack.pop();
+        float rOperand = stack.pop();
+        float lOperand = stack.pop();
 
-        return stack.push(leftOperand / rightOperand);
+        return stack.push(lOperand / rOperand);
     }
 
     private float multiply() {
-        float rightOperand = stack.pop();
-        float leftOperand = stack.pop();
+        float rOperand = stack.pop();
+        float lOperand = stack.pop();
 
-        return stack.push(leftOperand * rightOperand);
+        return stack.push(lOperand * rOperand);
     }
 
     private float pushToStack(String expression) throws IOException {
         checkIsNumeric(expression);
         float value = Float.parseFloat(expression);
+
         return stack.push(value);
     }
 
     private float changeSign() {
         float lastValue = stack.pop();
+
         return stack.push(-lastValue);
     }
 
