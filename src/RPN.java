@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * BOUN SWE-510, 2020 Fall, Remedial class' Midterm I
  *
- * RPN is the class that contains methods regarding a RPN Calculator.
+ * RPN is the class that contains methods regarding an RPN Calculator.
  *
  * @author Gökhan Üstüner
  **/
