@@ -53,24 +53,10 @@ public class RPN {
                 return add();
             } else if (expression.equals("-")) {
                 return subtract();
-            } else if (expression.equals("%")) {
-                return remainder();
             } else {
                 throw new IOException("Invalid expression!");
             }
         }
-    }
-
-    /**
-     * Carries out the Remainder operation of an RPN Calculator, with required stack operations.
-     *
-     * @return float
-     */
-    private float remainder() {
-        float rOperand = stack.pop();
-        float lOperand = stack.pop();
-
-        return stack.push(lOperand % rOperand);
     }
 
     /**
