@@ -8,7 +8,13 @@ To start RPN Calculator program, apply the following steps;
 - Extract the ```ZIP``` file
 - Open the directory, extracted from ```ZIP``` file, in Eclipse
 - In Eclipse, under the Package Explorer section, right click on the ```gokhan.ustuner``` directory and
-then click ```Run As > Java Application```
+then click ```Run As > Java Application```. Then, just choose ```Tester``` or ```Calculator```, 
+and press ```OK```.
+
+## Tests
+Test suites are inside ```Tester``` class. They are shown in the image below;
+
+![Alt text](images/test-suites.png)
 
 ## How to use?
 
